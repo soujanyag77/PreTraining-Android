@@ -1,10 +1,10 @@
 public abstract class Shape {
 	protected String color;
-	protected boolen filled;
+	protected boolean filled;
     
 	public Shape(){
 }
-	public Shape(String initialColor,boolen initiallyfilled){
+	public Shape(String initialColor,boolean initialfilled){
 }
 	public String getColor(){
 }
@@ -12,7 +12,7 @@ public abstract class Shape {
 }
 	public boolen isFilled(){
 }
-	public void setFilled(boolen newFilled){
+	public void setFilled(boolean newFilled){
 }
 	public abstract double getArea(){
 }
@@ -33,7 +33,7 @@ public class Circle extends Shape {
     public Circle() {
 
     }   
-    public Circle(double radius,String color,boolen filled) {
+    public Circle(double radius,String color,boolean filled) {
         this.radius = radius;
 	this.color = color;
 	this.filled = filled;
@@ -55,7 +55,7 @@ public class Circle extends Shape {
        
         return 2 * pi * radius;
     }
-	public abstract String toString(){
+	public String toString(){
 }
 }  
 
@@ -69,7 +69,7 @@ public class Rectangle extends Shape {
         this.width = width;
         this.length = length;
     }
-public Rectangle(double width, double length,String color,boolen filled) {
+public Rectangle(double width, double length,String color,boolean filled) {
         this.width = width;
         this.length = length;
 	this.color=color;
@@ -86,6 +86,20 @@ public Rectangle(double width, double length,String color,boolen filled) {
         
         return 2 * (width + length);
     }
+	public double getWidth(){
+}
+	public double getLength(){
+}
+	public double setLength(){
+}
+
+	public double setWidth(){
+}
+
+public String toString(){
+}
+
+
 }
 
 public class Square extends Rectangle {
@@ -112,6 +126,15 @@ public Squre(double side,String color,boolen filled) {
         
         return 2 * side;
     }
+	public double getSide(){
+}
+
+	public double setSide(){
+}
+
+public String toString(){
+}
+
 }
 
 public class ass2 {
@@ -119,5 +142,4 @@ public class ass2 {
 		
 }
 
-}
 }
