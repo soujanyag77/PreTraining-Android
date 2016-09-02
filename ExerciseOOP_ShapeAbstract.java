@@ -89,35 +89,34 @@ public Rectangle(double width, double length,String color,boolen filled) {
 }
 
 public class Square extends Rectangle {
-    protected double width, length; 
-    public Rectangle() {
+    protected double side; 
+    public Square() {
         
     }
-    public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
+    public Square(double side) {
+        this.side = side;
     }
-public Rectangle(double width, double length,String color,boolen filled) {
-        this.width = width;
-        this.length = length;
+public Squre(double side,String color,boolen filled) {
+        this.side = side;
 	this.color=color;
 	this.filled=filled;
     }
    
     public double area() {
         
-        return width * length;
+        return side * side;
     }
 
    
     public double perimeter() {
         
-        return 2 * (width + length);
+        return 2 * side;
     }
 }
 
 public class ass2 {
     public static void main(String[] args) {
+		
 }
 
 }
